@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import Adminconsole from './Components/Adminconsole/Adminconsole';
+import ProductDisplay from './Components/ProductDisplay/ProductDisplay';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(<ProductDisplay />, document.getElementById('root'));
+// registerServiceWorker();
