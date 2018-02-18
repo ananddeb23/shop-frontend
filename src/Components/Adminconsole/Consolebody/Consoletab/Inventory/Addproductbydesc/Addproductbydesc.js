@@ -21,17 +21,14 @@ class Addproductbydesc extends React.Component {
   render() {
     return (
       <div className="addbydesc">
-        <ButtonToolbar >
-          <DropdownButton
-            bsStyle="Default"
-            title="Category"
-            onChange={this.props.handlecategory}
-          >
-            <MenuItem className="Addproductbydesc-dropdown" eventKey="1" value="Appliances">Appliances</MenuItem>
-            <MenuItem className="Addproductbydesc-dropdown" eventKey="2" value="TVs">TVs</MenuItem>
 
-          </DropdownButton>
-        </ButtonToolbar>
+        <select onChange={this.props.handlecategory} className="AddProductsbydescdropdown">
+          <option value="" disabled="disabled" selected="selected">Please select a Category</option>
+          <option value="TVs">TV's</option>
+          <option value="Appliances">Appliances</option>
+        </select>
+
+        <br />
         <br />
         <form>
           <FieldGroup

@@ -153,17 +153,17 @@ class Inventory extends React.Component {
     return (
       <Grid >
         <br />
-        <div className="outer">
-        <Row className="show-grid">
+        <div className="Inventory-outer">
+          <Row className="Inventory-show-grid">
          
             
             
             <Col xs={12} md={8} lg={2} >
             </Col>
             
-            <Col xs={12} md={8} lg={8} className="border-right">
+            <Col xs={12} md={8} lg={8} className="Inventory-border-right">
              
-              <div className="addproducts">
+              <div >
                 <center> <h2> Add Products </h2> </center>
                 <fieldset>
                   <Alert bsStyle={this.state.alerttype}>
@@ -179,7 +179,7 @@ class Inventory extends React.Component {
               
                   <AddproductbyId handleproid={this.handleproid}/>
                   <br/><br/>
-                  <input type="button" value="Populate" className="btn-inventory" onClick={this.populate} />
+                  <input type="button" value="Populate" className="Inventory-btn-inventory" onClick={this.populate} />
 
                 </fieldset>
                 
@@ -188,16 +188,16 @@ class Inventory extends React.Component {
             <Col xs={12} md={12} lg={2}>
             </Col>
             </Row>
-            <br/>
-            <Row className="show-grid">
+          <br />     <br />
+            <Row className="Inventory-show-grid">
 
 
 
-              <Col xs={12} md={12} lg={2} >
+              <Col xs={12} md={8} lg={2} >
               </Col>
-              <Col xs={12} md={12} lg={8} className="border-right">
+              <Col xs={12} md={8} lg={8} className="Inventory-border-right">
 
-                <div className="addproducts">
+                <div >
                   <center> <h2> Remove Products </h2> </center>
                   <Alert bsStyle={this.state.alertremtype}>
                     <strong>{this.state.alertremmsg}</strong>
@@ -205,7 +205,7 @@ class Inventory extends React.Component {
                   <fieldset>
             
                     <RemoveProductbyId handleremove={this.handleremove} />
-                    <input type="button" value="Remove" className="btn-inventory" onClick={this.remove} />
+                    <input type="button" value="Remove" className="Inventory-btn-inventory" onClick={this.remove} />
 
                   </fieldset>
 

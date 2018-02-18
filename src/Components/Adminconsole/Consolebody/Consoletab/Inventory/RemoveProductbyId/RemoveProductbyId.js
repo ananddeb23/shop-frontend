@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import './RemoveProductbyId.css';
 
 function FieldGroup({
   id, ...props
@@ -11,13 +12,13 @@ function FieldGroup({
     </FormGroup>
   );
 }
-class RemoveProduct extends React.Component {
+class RemoveProductbyId extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <div>
+      <div className="RemoveProductbyId-layout">
         <form>
           <FieldGroup
             id="brand"
@@ -33,8 +34,8 @@ class RemoveProduct extends React.Component {
   }
 }
 
-RemoveProduct.propTypes = {
+RemoveProductbyId.propTypes = {
   handleremove: PropTypes.func.isRequired,
 
 };
-export default RemoveProduct;
+export default RemoveProductbyId;

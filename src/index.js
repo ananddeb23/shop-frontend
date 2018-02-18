@@ -4,5 +4,5 @@ import './index.css';
 import Adminconsole from './Components/Adminconsole/Adminconsole';
 // import ProductDisplay from './Components/ProductDisplay/ProductDisplay';
 
-// ReactDOM.render(<ProductDisplay />, document.getElementById('root'));
-// registerServiceWorker();
+ReactDOM.render(<Adminconsole />, document.getElementById('root'));
+
