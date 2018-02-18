@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import PropTypes from 'prop-types';
 import { FormGroup, FormControl } from 'react-bootstrap';
 
 function FieldGroup({
@@ -14,9 +13,9 @@ function FieldGroup({
 }
 
 class AddproductbyId extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (
@@ -33,5 +32,8 @@ class AddproductbyId extends React.Component {
     );
   }
 }
+AddproductbyId.propTypes = {
+  handleproid: PropTypes.func.isRequired,
 
+};
 export default AddproductbyId;

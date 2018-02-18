@@ -1,6 +1,6 @@
 import React from 'react';
 import './Addproductbydesc.css';
-
+import PropTypes from 'prop-types';
 import { DropdownButton, MenuItem, ButtonToolbar, FormGroup, FormControl } from 'react-bootstrap';
 
 
@@ -66,5 +66,13 @@ class Addproductbydesc extends React.Component {
     );
   }
 }
+Addproductbydesc.propTypes = {
+  handlebrand: PropTypes.func.isRequired,
+  handlecategory: PropTypes.func.isRequired,
+  handlepricefrom: PropTypes.func.isRequired,
+  handlepriceto: PropTypes.func.isRequired,
+  handlequantity: PropTypes.func.isRequired,
+
+};
 
 export default Addproductbydesc;

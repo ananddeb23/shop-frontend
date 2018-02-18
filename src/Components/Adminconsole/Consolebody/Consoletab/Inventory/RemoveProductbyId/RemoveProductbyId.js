@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
-
+import PropTypes from 'prop-types';
 
 function FieldGroup({
   id, ...props
@@ -33,4 +33,8 @@ class RemoveProduct extends React.Component {
   }
 }
 
+RemoveProduct.propTypes = {
+  handleremove: PropTypes.func.isRequired,
+
+};
 export default RemoveProduct;
