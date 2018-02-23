@@ -1,6 +1,6 @@
 import React from 'react';
 import Inventory from './Inventory/Inventory';
-// import OrdersAdmin from './OrdersAdmin';
+import OrderAdmin from './OrderAdmin/OrderAdmin';
 import { Tabs, Tab } from 'react-bootstrap';
 
 class ControlledTabs extends React.Component {
@@ -29,7 +29,7 @@ class ControlledTabs extends React.Component {
           <Inventory />
         </Tab>
         <Tab eventKey={2} title="Orders">
-          <h3> Content for order admin </h3>
+          <OrderAdmin />
         </Tab>
       </Tabs>
     );
